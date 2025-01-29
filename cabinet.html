@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Cabinet - Dr Madar</title>
+    <link rel="icon" href="images/logo.jpg" type="image/png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- swiper css link (for the image carousel) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cabintet.css">
+</head>
+<body>    
+    <header class="header">
+        <a href="index.html" class="logo"> 
+            <img src="images/logo.png" alt="Logo" class="logo-image"> Dr Madar
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="cabinet.html">Cabinet</a>
+            <div class="dropdown">
+                <a href="index.html#treatments" class="dropbtn">Traitements <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="implantologie.html">Implantologie</a>
+                    <a href="parodontologie.html">Parodontologie</a>
+                    <a href="chirurgie.html">Chirurgie</a>
+                </div>
+            </div>
+            <a href="tips.html">Conseils dentaires</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- images slider -->
+    <section class="cabinet-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/cabinet1.jpg" alt="Cabinet 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/cabinet2.jpg" alt="Cabinet 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/cabinet3.jpg" alt="Cabinet 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/cabinet4.jpg" alt="Cabinet 4">
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- images slider ends -->
+    
+    <!-- Cabinet info -->
+    <section class="cabinet-info">
+        <div class="container">
+            <div class="left-section">
+                <div class="box horaire">
+                    <h3>Horaires</h3>
+                    <p>Du lundi au vendredi : de 9h à 19h</p>
+                </div>
+                
+                <div class="box">
+                    <h3>Adresse</h3>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.843090865021!2d2.3442648156743073!3d48.84963697928717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d4cf800001%3A0x79d8b1f010b755b6!2s46%20Rue%20des%20%C3%89coles%2C%2075005%20Paris!5e0!3m2!1sen!2sfr!4v1604563086393!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="address"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avis Section -->
+            <div class="box">
+                <h3>Avis</h3>
+                <div class="avis-container">
+                    <div class="avis-left-section">
+                        <div class="avis">
+                            <p><strong><a href="https://g.co/kgs/C8uCc5F" target="_blank">Sandrine</a></strong></p>
+                            <p>Dentiste très professionnel et consciencieux. Je suis venue le voir pour des problèmes de gencive. Il a pris le temps , ses explications 
+                                sont très claires. A été très pédagogue avec son assistante. Cabinet très propre. Je recommande ce dentiste à 100%</p>
+                            <p><em>Visité en septembre 2024</em></p>
+                        </div>
+                        <br></br>
+                        <div class="avis">
+                            <p><strong><a href="https://g.co/kgs/VPddoJ1" target="_blank">Dimitra Skandali</a></strong></p>
+                            <p>Excellent dentiste qui mérite plus que 5 étoiles pour son expertise et professionnalisme. Il a su me traiter dans l'urgence à plusieurs 
+                                reprises pour des sujets plus compliqués qu'une simple carie sans sentir la moindre douleur ni pendant ni après l'opération.</p>
+                            <p><em>Visité en janvier 2024</em></p>
+                        </div>
+                        <br></br>
+                        <div class="avis">
+                            <p><strong><a href="https://g.co/kgs/BXTKGFz" target="_blank">Wendy Iles</a></strong></p>
+                            <p>Excellent experience. I had a very complicated problem with 5 teeth... His patience with my nervosité, his belief in himself that he 
+                                could deliver my needs …. Et voilà just like that …. Perfection !</p>
+                            <p><em>Visité en septembre 2024</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <!-- Avis Section end -->
+
+            <!-- Technology Section -->
+            <div class="right-section">
+                <div class="box">
+                    <h3>Technologies utilisées</h3>
+                    <p>Au sein du cabinet, nous proposons un flux numérique complet de A à Z, de la prise de l'empreinte dentaire jusqu'à la pose de la prothèse, une approche moderne 
+                        et rare qui garantit précision, confort et efficacité tout au long de votre traitement.</p>
+                    
+                    <div class="tech-container">
+                        <div class="tech-box">
+                            <img src="images/carestream.jpg" alt="Carestream 3700 P21" class="tech-image">
+                            <p><strong>Carestream 3700 P21 :</strong> La caméra intra-orale Carestream 3700 P21 est une technologie de pointe qui révolutionne la manière de capturer 
+                                les images dentaires en trois dimensions. Grâce à sa précision exceptionnelle, il permet de réaliser des scans rapides et confortables, offrant des 
+                                images claires et détaillées des dents et de la structure buccale. Cette innovation facilite la planification des traitements, qu'il s'agisse de 
+                                restaurations dentaires, d'implants ou de prothèses sur mesure, en garantissant une précision sans précédent et des résultats fiables pour le praticien, 
+                                tout en améliorant considérablement l'expérience du patient.</p>
+                        </div>
+
+                        <div class="tech-box">
+                            <img src="images/CS82003DNeo.PNG" alt="CS 8200 3D Neo" class="tech-image">
+                            <p><strong>CS 8200 3D Neo :</strong> Le CS 8200 3D Neo est un appareil multifonctionnel qui allie imagerie panoramique 2D et technologie 3D, offrant une 
+                                vision plus complète et détaillée des structures dentaires, osseuses et maxillaires. Ce dispositif innovant permet de détecter des pathologies souvent 
+                                invisibles sur des radiographies classiques, ce qui améliore la précision des diagnostics et des traitements, notamment en chirurgie dentaire et 
+                                implantologie. Son utilisation permet de réduire les incertitudes et d'optimiser les résultats cliniques, tout en offrant aux patients une analyse 
+                                plus fine de leur santé bucco-dentaire.</p>
+                        </div>
+
+                        <div class="tech-box">
+                            <img src="images/autoclave.png" alt="autoclave" class="tech-image">
+                            <p><strong>Autoclave W&H Lisa :</strong>  L'autoclave W&H Lisa est un équipement de stérilisation de pointe conçu pour répondre aux normes les plus strictes en 
+                                matière de sécurité et d'hygiène dans les cabinets dentaires et médicaux. Grâce à sa technologie avancée de cycle de stérilisation rapide, il garantit 
+                                une élimination efficace des bactéries, virus et autres agents pathogènes, assurant une stérilisation complète des instruments chirurgicaux et dentaires.</p>
+                        </div>
+
+                        <div class="tech-box">
+                            <img src="images/mectrom.jpg" alt="Piezochirurgie Mectrom" class="tech-image">
+                            <p><strong>Piezochirurgie Mectrom :</strong> La piezochirurgie est une technologie avancée qui permet de réaliser des interventions chirurgicales 
+                                avec une précision exceptionnelle, notamment dans l'implantologie. Grâce à l’utilisation de microvibrations ultrasoniques, l'appareil Mectrom 
+                                permet de couper l'os avec une grande finesse tout en préservant les tissus mous environnants. Cette technologie offre de nombreux avantages : 
+                                réduction de la douleur, diminution du temps de guérison et une intervention plus précise et moins invasive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Technology Section ends -->
+
+            <!-- Before and After Section -->
+            <div class="before-after-section">
+                <h3>Résultats avant-après</h3>
+                <div class="before-after-container">
+                    <div class="before-after-item">
+                        <h4>Cas 1</h4>
+                        <div class="before-after-slider">
+                            <div class="slider-container">
+                                <img src="images/before_1.JPG" alt="Before" class="before-image">
+                                <img src="images/after_1.JPG" alt="After" class="after-image">
+                                <input type="range" min="0" max="100" value="50" class="slider">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="before-after-item">
+                        <h4>Cas 2</h4>
+                        <div class="before-after-slider">
+                            <div class="slider-container">
+                                <img src="images/before_2.JPG" alt="Before" class="before-image">
+                                <img src="images/after_2.JPG" alt="After" class="after-image">
+                                <input type="range" min="0" max="100" value="50" class="slider">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="before-after-item">
+                        <h4>Cas 3</h4>
+                        <div class="before-after-slider">
+                            <div class="slider-container">
+                                <img src="images/before_3.JPG" alt="Before" class="before-image">
+                                <img src="images/after_3.JPG" alt="After" class="after-image">
+                                <input type="range" min="0" max="100" value="50" class="slider">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Before and After Section ends -->
+        </div>
+    </section>
+    <!-- Cabinet info ends -->
+
+    <!-- footer -->
+   <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>E-mail</h3>
+                <a href="mailto:thierry@docmad.fr" class="link">thierry@docmad.fr</a>
+            </div>
+
+            <div class="box">
+                <h3>Téléphone</h3>
+                <p>01 43 54 32 38</p>
+            </div>
+
+            <div class="box">
+                <h3>Horaires</h3>
+                <p>Lundi au vendredi : de 9h à 19h</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="box">
+                <h3>Suivez-nous</h3>
+                <a href="https://www.instagram.com/dr_thierry_madar/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dr-thierry-madar-97890539/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- footer ends -->
+
+    <!-- copyright start -->
+    <copyright class="copyright">
+        <div class="container">
+            <p>&copy; 2024 Dr Madar - Tous droits réservés</p>
+        </div>
+    </copyright>
+    <!-- copyright end -->  
+
+    <!-- swiper js link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include TwentyTwenty Plugin and required CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twentytwenty/1.0.0/twentytwenty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-event-move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twentytwenty/1.0.0/jquery.twentytwenty.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+
+    <script>
+        function initSliders() {
+            const sliders = document.querySelectorAll('.slider');
+
+            sliders.forEach(slider => {
+                const container = slider.closest('.slider-container');
+                const beforeImage = container.querySelector('.before-image');
+                const afterImage = container.querySelector('.after-image');
+
+                slider.addEventListener('input', (e) => {
+                    const value = e.target.value;
+                    afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+                });
+            });
+        }
+
+        window.addEventListener('load', initSliders);
+    </script>
+  
+    
+</body>
+</html>

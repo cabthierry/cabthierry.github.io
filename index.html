@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Madar - Chirurgien dentiste</title>
+    <link rel="icon" href="images/logo.jpg" type="image/png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header class="header">
+        <a href="index.html" class="logo"> 
+            <img src="images/logo.png" alt="Logo" class="logo-image"> Dr Madar
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a> <!-- Lien vers index.html -->
+            <a href="cabinet.html">Cabinet</a>
+            <div class="dropdown">
+                <a href="index.html#treatments" class="dropbtn">Traitements <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="implantologie.html">Implantologie</a>
+                    <a href="parodontologie.html">Parodontologie</a>
+                    <a href="chirurgie.html">Chirurgie</a>
+                </div>
+            </div>
+            <a href="tips.html">Conseils dentaires</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Dr Madar</h3>
+            <p>
+                Chirurgien-dentiste
+                <br>
+                Ancien enseignant de l'Université Paris Cité
+                <br>
+                Post graduate en parodontologie à la NYU
+                <br>
+                <br>
+                46 rue des Écoles, 75005 Paris
+            </p>
+        </div>
+    </section>
+    <!-- home end -->
+
+    <!-- about us section-->
+    <section class="about" id="about">  
+        <h1 class="heading"> A propos </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/about.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Cabinet</h3>
+                <p>Mon cabinet se situe en plein coeur de Paris, entre Notre-Dame (5 min) et le Panthéon (2 min).</p>
+                <p>Ouvert toute la semaine, j'y effectue mes soins depuis plus de 30 ans.</p>
+                <a href="cabinet.html" class="btn">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+
+
+    <!-- treatments -->
+    <section class="treatments" id="treatments">
+        <h1 class="heading">Traitements</h1>
+        <div class="box-container">
+            <a href="implantologie.html" class="box">
+                <img src="images/implantologie.png" alt="">
+                <h3>Implantologie</h3>
+            </a>
+            <a href="parodontologie.html" class="box">
+                <img src="images/parodontologie.png" alt="">
+                <h3>Parodontologie</h3>
+            </a>
+            <a href="chirurgie.html" class="box">
+                <img src="images/chirurgie.png" alt="">
+                <h3>Chirurgie orale</h3>
+            </a>
+        </div>
+    </section>
+    <!-- treatment end-->
+
+
+    <!-- team section -->
+    <section class="team" id="team">
+        <h1 class="heading">Equipe</h1>
+        <div class="team-container">
+            <div class="member">
+                <div class="image">
+                    <img src="images/team-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Dr Thierry Madar</h3>
+                    <span>Chirurgien-Dentiste</span>
+                </div>
+            </div>
+            <div class="member">
+                <div class="image">
+                    <img src="images/team-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Esmeralda</h3>
+                    <span>Assistante</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team section ends -->
+
+    <!-- blog -->
+    <section class="blog" id="blog">
+        <h1 class="heading">Articles</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/hygiene.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Hygiène dentaire au quotidien</h3>
+                    <p>Comment bien se brosser les dents, utiliser du fil dentaire et choisir le bon dentifrice pour une hygiène impeccable.</p>
+                    <a href="hygiene.html" class="btn">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/esthetic.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Esthétique dentaire : blanchiment et plus</h3>
+                    <p>Découvrez les différentes techniques d'esthétique dentaire pour un sourire éclatant, du blanchiment aux facettes.</p>
+                    <a href="esthetic.html" class="btn">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/sleep-medicine.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Sommeil et Ronflements</h3>
+                    <p>Comment des gouttières dentaires peuvent aider à prévenir les ronflements et améliorer votre sommeil.</p>
+                    <a href="sleep-medicine.html" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog ends -->
+
+   <!-- footer -->
+   <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>E-mail</h3>
+                <a href="mailto:thierry@docmad.fr" class="link">thierry@docmad.fr</a>
+            </div>
+
+            <div class="box">
+                <h3>Téléphone</h3>
+                <p>01 43 54 32 38</p>
+            </div>
+
+            <div class="box">
+                <h3>Horaires</h3>
+                <p>Lundi au vendredi : de 9h à 19h</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="box">
+                <h3>Suivez-nous</h3>
+                <a href="https://www.instagram.com/dr_thierry_madar/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dr-thierry-madar-97890539/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- footer ends -->
+
+    <!-- copyright start -->
+    <copyright class="copyright">
+        <div class="container">
+            <p>&copy; 2024 Dr Madar - Tous droits réservés</p>
+        </div>
+    </copyright>
+    <!-- copyright end --> 
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

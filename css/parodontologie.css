@@ -1,0 +1,74 @@
+/* banner */
+.banner {
+    height: 500px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/parodontologie_cover.png);
+    background-size: cover;
+    background-position: center;
+}
+/* banner ends */
+
+/* main content */
+.main-content {
+    padding: 2rem 7%;
+    text-transform: none;
+}
+.section-title {
+    font-size: 4rem;
+    color: #1e2736;
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+.section-description {
+    font-size: 1.6rem;
+    color: #3e5055;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    text-transform: none;
+}
+.sub-title {
+    font-size: 2.5rem;
+    color: #1e2736;
+    margin: 2rem 0 1rem;
+    text-transform: none;
+}
+.before-list {
+    list-style-type: disc;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #3e5055;
+    text-transform: none;
+}
+.benefits-list {
+    list-style-type: disc;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: #3e5055;
+    text-transform: none;
+}
+.benefits-list li{
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: #3e5055;
+    text-transform: none;
+}
+.benefits-list li strong{
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: #3e5055;
+    text-transform: none;
+}
+/* main content ends */
+
+/* footer background */
+.footer{
+    background: #eee;
+}
+/* footer background ends */

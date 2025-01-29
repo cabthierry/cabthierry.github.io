@@ -1,0 +1,285 @@
+/* cabinet images */
+.cabinet-slider .swiper-container {
+    width: 100%;
+    height: 650px;
+}
+.cabinet-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* cabinet images ends */
+
+/* image pagination */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(0%);
+    text-align: center;
+    z-index: 10;
+}
+.swiper-pagination-bullet {
+    background-color: #ffffff;
+    opacity: 0.6;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #3e5055;
+    opacity: 1;
+}
+/* image pagination ends */
+
+/* cabinet info */
+.cabinet-info {
+    margin-top: -5%;
+}
+.cabinet-info .container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 5rem 7%;
+}
+.cabinet-info .box {
+    flex: 1 1 40rem;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.cabinet-info .box h3 {
+    color: #1e2736;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-transform: none;
+}
+.cabinet-info .box p {
+    font-size: 1.4rem;
+    color: #3e5055;
+    padding: 1rem 0;
+    line-height: 2;
+    text-transform: none;
+    text-align: justify;
+}
+.cabinet-info .map {
+    margin-top: 1rem;
+}
+.cabinet-info .map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+}
+/* cabinet info ends */
+
+/* maps */
+.map iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+/* maps ends */
+
+/* containers */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+/* containers ends */
+
+/* sections with schedule and address */
+.left-section {
+    width: 30%;
+}
+.right-section {
+    width: 100%;
+}
+/* sections with schedule and address ends */
+.box.horaire {
+    height: 150px;
+    overflow: hidden;
+}
+
+/* tech */
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.tech-box {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: flex-start;
+}
+.tech-image {
+    width: 170px;
+    height: auto;
+    margin-right: 1.5rem;
+    object-fit: contain;
+}
+/* tech ends */
+
+/* Before-After Section */
+.before-after-section {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.before-after-section h3 {
+    color: #1e2736;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-transform: none;
+    margin-bottom: 20px;
+}
+.before-after-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.before-after-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.before-after-item h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #5f6368;
+}
+.before-after-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.before-image, .after-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.after-image {
+    clip-path: inset(0 50% 0 0);
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    background: transparent;
+    z-index: 2;
+    margin: 0;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 8px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #3e5055;
+    border-radius: 4px;
+    cursor: ew-resize;
+}
+.slider::-moz-range-thumb {
+    width: 8px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #3e5055;
+    border-radius: 4px;
+    cursor: ew-resize;
+}
+
+@media (max-width: 768px) {
+    .before-after-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .before-after-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .slider-container {
+        height: 150px;
+    }
+
+    .slider::-webkit-slider-thumb,
+    .slider::-moz-range-thumb {
+        height: 150px;
+    }
+}
+/* Before-After Section ends*/
+
+/* Avis */
+.avis-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.avis {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.avis a{
+    color: #1e2736;
+    font-size: 1.5rem;
+    text-transform: none;
+}
+.avis p{
+    color: #3e5055;
+    font-size: 1.4rem;
+    text-transform: none;
+    text-align: justify;
+}
+
+/* footer background */
+.footer{
+    background: #eee;
+}
+/* footer background ends */

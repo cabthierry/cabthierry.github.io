@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Madar - Chirurgien dentiste - Contact</title>
+    <link rel="icon" href="images/logo.jpg" type="image/png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>    
+    <header class="header">
+        <a href="index.html" class="logo"> 
+            <img src="images/logo.png" alt="Logo" class="logo-image"> Dr Madar
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="cabinet.html">Cabinet</a>
+            <div class="dropdown">
+                <a href="index.html#treatments" class="dropbtn">Traitements <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="implantologie.html">Implantologie</a>
+                    <a href="parodontologie.html">Parodontologie</a>
+                    <a href="chirurgie.html">Chirurgie</a>
+                </div>
+            </div>
+            <a href="tips.html">Conseils dentaires</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- contact section -->
+    <section class="contact">
+        <div class="container">
+            <h1 class="section-title">Contactez-nous</h1>
+            <p class="section-description">Nous sommes à votre disposition pour toutes vos questions ou demandes d'information.</p>
+
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:thierry@docmad.fr" class="link">thierry@docmad.fr</a>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone"></i>
+                    <h3>Téléphone</h3>
+                    <p>01 43 54 32 38</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horaires</h3>
+                    <p>Lundi au vendredi : de 9h à 19h</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Envoyez-nous un message</h2>
+
+                <!-- Web3Forms form integration -->
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms required hidden fields -->
+                    <input type="hidden" name="access_key" value="2cac8e67-9add-4298-9413-a065c659886b" />
+                    <input type="hidden" name="subject" value="Nouveau message de la page de contact" />
+                    <input type="hidden" name="from_name" value="Dr Madar Website" />
+                    <input type="hidden" name="redirect" value="thankyou.html" />
+
+                    <div class="input-box">
+                        <input type="text" id="name" name="name" placeholder="Votre nom et prénom" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="phone" name="phone" placeholder="Votre téléphone" />
+                    </div>
+                    <div class="input-box">
+                        <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- copyright start -->
+    <copyright class="copyright">
+        <div class="container">
+            <p>&copy; 2024 Dr Madar - Tous droits réservés</p>
+        </div>
+    </copyright>
+    <!-- copyright end --> 
+
+</body>
+</html>

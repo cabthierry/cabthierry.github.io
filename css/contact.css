@@ -1,0 +1,86 @@
+.contact {
+    padding: 3rem 7%;
+    text-align: center;
+}
+.section-title {
+    font-size: 3.5rem;
+    color: #1e2736;
+    margin-bottom: 2rem;
+}
+.section-description {
+    font-size: 1.6rem;
+    color: #3e5055;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-transform: none;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    text-transform: none;
+}
+.info-box {
+    background-color: #f4f7fb;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    text-transform: none;
+}
+.info-box i {
+    font-size: 3rem;
+    color: #1e2736;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+.info-box h3 {
+    font-size: 1.8rem;
+    color: #1e2736;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+.info-box p, .info-box a {
+    font-size: 1.6rem;
+    color: #3e5055;
+    text-transform: none;
+}
+.contact-form {
+    margin-top: 2rem;
+}
+.contact-form h2 {
+    font-size: 2.5rem;
+    color: #1e2736;
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+.input-box {
+    margin-bottom: 1.5rem;
+}
+.input-box label {
+    font-size: 1.6rem;
+    color: #1e2736;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: none;
+}
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #1e2736;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-transform: none;
+}
+.input-box input[type="submit"] {
+    background-color: #1e2736;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: none;
+}
+.input-box input[type="submit"]:hover {
+    background-color: #3e5055;
+}
