@@ -342,24 +342,3 @@
         width: 100%;
     }
 }
-/* Fix dropdown over swiper on mobile */
-@media (max-width: 768px) {
-    .header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        z-index: 1000;
-    }
-
-    .dropdown-content {
-        position: static; /* pour dropdown vertical sur mobile */
-        display: none;
-        width: 100%;
-    }
-
-    .dropdown.active .dropdown-content {
-        display: block;
-    }
-}
