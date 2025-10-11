@@ -127,9 +127,10 @@ section{
         padding: 1rem 0;
         text-align: center;
         flex-flow: column;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Cache le menu par défaut */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path 0.3s ease-in-out;
-        z-index: 1000; /* Assurez-vous que le menu est au-dessus des autres éléments */
+        z-index: 1000 !important;
+        overflow: visible !important;
     }
 
     .header .navbar.active {
