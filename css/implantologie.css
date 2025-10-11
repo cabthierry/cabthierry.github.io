@@ -113,3 +113,102 @@
     background: #eee;
 }
 /* footer background ends */
+
+/* --- Responsive design --- */
+@media (max-width: 1024px) {
+    .banner {
+        width: 100%;
+        height: 300px;
+        background-position: center;
+    }
+
+    .implant-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .implant-image-small {
+        width: 150px;
+        height: 150px;
+        margin: 0 0 1rem 0;
+    }
+
+    .implant-description {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .comparison-table {
+        font-size: 1.4rem;
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.8rem;
+    }
+
+    .main-content {
+        padding: 2rem 5%;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .sub-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-description,
+    .before-list,
+    .benefits-list li,
+    .implant-description {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .comparison-table {
+        font-size: 1.3rem;
+    }
+
+    .implant-type {
+        font-size: 1.8rem;
+    }
+
+    .implant-info {
+        margin: 1.5rem 0;
+    }
+
+    .implant-image-small {
+        width: 120px;
+        height: 120px;
+    }
+
+    .footer .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .box {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}

@@ -112,13 +112,6 @@
 }
 /* containers ends */
 
-/* sections with schedule and address */
-.left-section {
-    width: 30%;
-}
-.right-section {
-    width: 100%;
-}
 /* sections with schedule and address ends */
 .box.horaire {
     height: 150px;
@@ -288,3 +281,64 @@
     background: #eee;
 }
 /* footer background ends */
+
+/* --- Responsive design --- */
+@media (max-width: 1024px) {
+    .cabinet-info .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 5%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .cabinet-info .box {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .tech-container {
+        flex-direction: column;
+    }
+
+    .tech-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tech-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 1rem auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabinet-info .box h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .cabinet-info .box p {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    .avis {
+        width: 100%;
+    }
+
+    .left-section .box, 
+    .right-section .box, 
+    .avis-container {
+        width: 100%;
+    }
+}
