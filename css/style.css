@@ -159,6 +159,13 @@ section{
         display: block;
     }
 }
+@media (min-width: 768px) {
+
+    .dropdown-content {
+        position: absolute;
+    }
+=
+}
 .dropdown {
     position: relative;
     display: inline-block;
