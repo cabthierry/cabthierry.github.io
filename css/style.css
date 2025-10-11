@@ -129,8 +129,7 @@ section{
         flex-flow: column;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path 0.3s ease-in-out;
-        z-index: 1000 !important;
-        overflow: visible !important;
+        z-index: 1000;
     }
 
     .header .navbar.active {
