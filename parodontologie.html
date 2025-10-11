@@ -169,7 +169,19 @@
             <p>&copy; 2024 Dr Madar - Tous droits réservés</p>
         </div>
     </copyright>
-    <!-- copyright end -->  
+    <!-- copyright end -->
+    
+    <!-- hamburger menu  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menu-btn');
+            const navbar = document.querySelector('.header .navbar');
+    
+            menuBtn.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
+    </script>
 
 </body>
 </html>

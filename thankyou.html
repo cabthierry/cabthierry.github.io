@@ -93,6 +93,18 @@
         </div>
     </section>
     <!-- thank you section ends -->
+    
+    <!-- hamburger menu  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menu-btn');
+            const navbar = document.querySelector('.header .navbar');
+    
+            menuBtn.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
+    </script>
      
 </body>
 </html>
