@@ -172,7 +172,6 @@ section{
 
 .dropdown-content {
     display: none;
-    position: absolute;
     background-color: var(--white);
     box-shadow: var(--box-shadow);
     z-index: 1;
