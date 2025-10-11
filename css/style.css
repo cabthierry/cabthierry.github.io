@@ -101,15 +101,63 @@ section{
 .header .btn{
     margin-top: 0;
 }
-#menu-btn{
+/* Styles pour le bouton du menu hamburger */
+#menu-btn {
     font-size: 2.5rem;
     cursor: pointer;
     color: #1e2736;
-    margin-left: 1.7rem;
-    display: none;
+    display: none; /* Caché par défaut */
 }
-#menu-btn:hover{
+
+#menu-btn:hover {
     color: var(--primary);
+}
+
+/* Media query pour les écrans de petite taille */
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block; /* Afficher le bouton sur les petits écrans */
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: var(--white);
+        border-top: var(--border);
+        padding: 1rem 0;
+        text-align: center;
+        flex-flow: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Cache le menu par défaut */
+        transition: clip-path 0.3s ease-in-out;
+        z-index: 1000; /* Assurez-vous que le menu est au-dessus des autres éléments */
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Affiche le menu */
+    }
+
+    .header .navbar a {
+        display: block;
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        background-color: var(--white);
+        box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 }
 .dropdown {
     position: relative;
@@ -148,7 +196,7 @@ section{
 
 /* home */
 .home{
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     background: url(../images/home.JPG) no-repeat;
@@ -172,6 +220,28 @@ section{
     font-weight: bold;
     padding: 1rem 0;
     text-transform: none;
+}
+
+@media (max-width: 768px) {
+    .home {
+        min-height: 50vh;
+        background-size: cover;
+    }
+
+    .home .content {
+        padding-left: 3rem;
+        padding-top: 5rem;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+
+    .home .content p {
+        color: white;
+        font-size: 1.4rem;
+        text-shadow: 1px 1px black;
+    }
 }
 /* home end */
 
@@ -503,23 +573,10 @@ section{
         padding: 1rem 0;
         font-size: 2rem;
     }
-    .home{
-        background-position: left;
-    }
-    .home .content{
-        max-width: 50rem;
-        padding-left: 3rem;
-    }
-    .home .content h3{
-        font-size: 4rem;
-    }
 }
 
 @media(max-width:450px){
     html{
         font-size: 50%;
-    }
-    .home .content h3{
-        font-size: 3rem;
     }
 }
